@@ -1,0 +1,29 @@
+.news {
+    flex-wrap: wrap;
+    order: 1;
+    padding-left: 5rem;
+    padding-top: 3rem;
+    
+    
+    &__heading {
+        font-size: 5rem;
+        width: 90%;
+        line-height: 7rem;
+
+        &:hover {
+            color: grey;
+            transition: all .4s;
+        }
+
+        &--image {
+            width: 70%;
+        }
+    }
+}
+
+figcaption {
+    padding-top: .2rem;
+    padding-bottom: 1.2rem;
+    font-size: 2rem;
+    font-weight: 200;
+}

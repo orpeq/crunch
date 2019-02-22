@@ -1,0 +1,59 @@
+a {
+text-decoration: none;
+color:black;
+list-style:none;
+}
+
+.sidebar__nav-buttons {
+    font-size: 3rem;
+    font-weight: 100;
+    font-family: $navigation-font;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    outline: none;
+
+    &--item {
+        &:hover {
+                color:green;
+                transition: all .5s;
+                cursor: pointer;
+       
+        }
+    }
+
+}
+
+// a.sidebar__nav-buttons:hover {
+//     color:green;
+//     transition: all .5s;
+// }
+
+    
+
+.sidebar__login-button {
+    border: solid 1px green;
+    border-radius: 0;
+    padding: .6rem 1rem;
+    height: 4rem;
+    width: 11rem;
+    cursor: pointer;
+    outline: none;
+
+    &:active {
+        transform: scale(0.9);
+        transition: all .4s;
+    }
+
+    &:hover {
+        background: rgb(0,36,30);
+        background: linear-gradient(90deg, rgba(0,36,30,0.7) 5%, rgba(9,121,9,1) 30%);
+        color: white; 
+        box-shadow: 0 10px 20px rgba(0,0,0,.2)
+    }
+
+    
+    &hover::after {
+        transform: scale(1.2);
+    } 
+    
+}

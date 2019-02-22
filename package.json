@@ -1,0 +1,20 @@
+{
+  "name": "tech-crunch",
+  "version": "1.0.0",
+  "description": "Tech Crunch",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-sass sass/main.scss css/style.css -w"
+  },
+  "keywords": [
+    "Template",
+    "for",
+    "a",
+    "Project"
+  ],
+  "author": "Tomas Antanaitis",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

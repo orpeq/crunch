@@ -1,0 +1,108 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  min-width: 0;
+  min-height: 0; }
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem; }
+  h2:hover {
+    color: grey;
+    transition: all .4s; }
+
+h4 {
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+  color: goldenrod; }
+
+a {
+  text-decoration: none;
+  color: black;
+  list-style: none; }
+
+.sidebar__nav-buttons {
+  font-size: 3rem;
+  font-weight: 100;
+  font-family: "Source Sans Pro", sans-serif;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  outline: none; }
+  .sidebar__nav-buttons--item:hover {
+    color: green;
+    transition: all .5s;
+    cursor: pointer; }
+
+.sidebar__login-button {
+  border: solid 1px green;
+  border-radius: 0;
+  padding: .6rem 1rem;
+  height: 4rem;
+  width: 11rem;
+  cursor: pointer;
+  outline: none; }
+  .sidebar__login-button:active {
+    transform: scale(0.9);
+    transition: all .4s; }
+  .sidebar__login-button:hover {
+    background: #00241e;
+    background: linear-gradient(90deg, rgba(0, 36, 30, 0.7) 5%, #097909 30%);
+    color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+  .sidebar__login-buttonhover::after {
+    transform: scale(1.2); }
+
+.feed {
+  order: 2;
+  padding-right: 4%;
+  padding-top: 3%; }
+  .feed__hr {
+    display: flex;
+    width: 100%;
+    color: grey;
+    margin-bottom: 1rem; }
+
+.news {
+  flex-wrap: wrap;
+  order: 1;
+  padding-left: 5rem;
+  padding-top: 3rem; }
+  .news__heading {
+    font-size: 5rem;
+    width: 90%;
+    line-height: 7rem; }
+    .news__heading:hover {
+      color: grey;
+      transition: all .4s; }
+    .news__heading--image {
+      width: 70%; }
+
+figcaption {
+  padding-top: .2rem;
+  padding-bottom: 1.2rem;
+  font-size: 2rem;
+  font-weight: 200; }
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  order: 0; }
+  .sidebar__image {
+    width: 6.5rem;
+    height: 4rem;
+    margin: 3rem 3rem 2rem 2rem; }
+  .sidebar__login-button {
+    margin: 2rem;
+    font-family: heading-font-2;
+    color: green;
+    font-size: 1.5rem; }

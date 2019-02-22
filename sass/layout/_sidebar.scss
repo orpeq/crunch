@@ -1,0 +1,20 @@
+.sidebar {
+  display:flex;
+  flex-direction: column;
+  order: 0;
+  
+
+  &__image {
+    width: 6.5rem;
+    height: 4rem;
+    margin: 3rem 3rem 2rem 2rem;
+  }
+
+  &__login-button {
+    margin:2rem;
+    font-family: heading-font-2;
+    color: green;
+    font-size: 1.5rem;
+  }
+
+}

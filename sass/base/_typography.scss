@@ -1,0 +1,21 @@
+$navigation-font: 'Source Sans Pro', sans-serif;
+$heading-font-2: 'Lato', sans-serif;
+$heading-font: 'Roboto', sans-serif;
+
+
+
+h2 {
+    font-family: $heading-font;
+    font-size: 4rem;
+
+    &:hover {
+        color: grey;
+        transition: all .4s;
+    }
+}
+
+h4 {
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+    color:goldenrod;
+}
