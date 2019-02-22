@@ -2,7 +2,6 @@
   display:flex;
   flex-direction: column;
   order: 0;
-  
 
   &__image {
     width: 6.5rem;
@@ -17,4 +16,39 @@
     font-size: 1.5rem;
   }
 
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    
+  } 
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar__login-button {
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 22%;
+    width: 13rem;
+    font-size: 3rem;
+    
+  } 
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar__image {
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 5%;
+    width: 15rem;
+    height: 10rem;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    
+  } 
 }

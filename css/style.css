@@ -8,11 +8,20 @@
 html {
   font-size: 62.5%; }
 
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 50%; } }
+
 body {
   box-sizing: border-box;
-  display: flex;
+  display: inline-flex;
   min-width: 0;
   min-height: 0; }
+
+@media screen and (max-width: 700px) {
+  body {
+    flex-direction: row;
+    flex-wrap: wrap; } }
 
 h2 {
   font-family: "Roboto", sans-serif;
@@ -20,6 +29,11 @@ h2 {
   h2:hover {
     color: grey;
     transition: all .4s; }
+
+@media screen and (max-width: 700px) {
+  h2 {
+    font-size: 2.5rem;
+    line-height: 3rem; } }
 
 h4 {
   font-size: 2rem;
@@ -43,6 +57,10 @@ a {
     transition: all .5s;
     cursor: pointer; }
 
+@media screen and (max-width: 700px) {
+  .sidebar__nav-buttons {
+    font-size: 4rem; } }
+
 .sidebar__login-button {
   border: solid 1px green;
   border-radius: 0;
@@ -65,7 +83,9 @@ a {
 .feed {
   order: 2;
   padding-right: 4%;
-  padding-top: 3%; }
+  padding-top: 3%;
+  flex-wrap: wrap;
+  float: left; }
   .feed__hr {
     display: flex;
     width: 100%;
@@ -76,7 +96,9 @@ a {
   flex-wrap: wrap;
   order: 1;
   padding-left: 5rem;
-  padding-top: 3rem; }
+  padding-top: 3rem;
+  flex-wrap: wrap;
+  float: left; }
   .news__heading {
     font-size: 5rem;
     width: 90%;
@@ -86,6 +108,10 @@ a {
       transition: all .4s; }
     .news__heading--image {
       width: 70%; }
+  @media screen and (max-width: 700px) {
+    .news__heading {
+      font-size: 3.5rem;
+      line-height: 3rem; } }
 
 figcaption {
   padding-top: .2rem;
@@ -106,3 +132,27 @@ figcaption {
     font-family: heading-font-2;
     color: green;
     font-size: 1.5rem; }
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center; } }
+
+@media screen and (max-width: 700px) {
+  .sidebar__login-button {
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 22%;
+    width: 13rem;
+    font-size: 3rem; } }
+
+@media screen and (max-width: 700px) {
+  .sidebar__image {
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 5%;
+    width: 15rem;
+    height: 10rem;
+    margin-top: 3rem;
+    margin-bottom: 4rem; } }

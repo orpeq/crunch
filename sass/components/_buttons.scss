@@ -23,6 +23,13 @@ list-style:none;
 
 }
 
+@media screen and (max-width: 700px) {
+    .sidebar__nav-buttons {
+      font-size: 4rem;
+      
+    } 
+  }
+
 // a.sidebar__nav-buttons:hover {
 //     color:green;
 //     transition: all .5s;
